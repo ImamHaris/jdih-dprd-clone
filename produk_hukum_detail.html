@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>JDIH DPRD Pesawaran Clone</title>
+	<!-- Icon Tab Web -->
+    <link rel="icon" href="assets/img/icon/logo-32x32.png" sizes="32x32"/>
+	<!-- CSS -->
+    <link rel="stylesheet" href="assets/themes/css/style.min.css" type="text/css"/>
+    <link rel="stylesheet" href="assets/themes/css/public.css" type="text/css"/>
+    <link rel="stylesheet" href="assets/themes/css/stylefont.css" type="text/css"/>
+    <link rel="stylesheet" href="assets/themes/css/style.css" type="text/css"/>
+    <link rel="stylesheet" href="assets/themes/css/splide.min.css" type="text/css"/>
+	<!-- Additional Font -->
+    <link rel="stylesheet" href="assets/themes/css/icofont.css" type="text/css"/>
+    <link rel="stylesheet" href="assets/themes/css/ndeso-font.css" type="text/css"/>
+	<!-- Jquery Ver 3.7.1 -->
+	<script type="text/javascript" src="assets/themes/js/jquery/jquery.min.js"></script>
+	<script type="text/javascript" src="assets/themes/js/jquery/jquery-migrate.min.js"></script>
+    <!-- Bootstrap 5 CSS -->
+    <link rel="stylesheet" href="assets/bootstrap/bootstrap.min.css" type="text/css"/>
+	<!-- CSS Style -->
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css"/>
+</head>
+
+<body class="home page-template page-template-page-home page-template-page-home-php page page-id-159 wp-custom-logo wp-embed-responsive">
+    <div class="ndeso__top wrapper">
+		<!-- Header -->
+		<section class="ndeso__header">
+			<div class="ndeso__slidelayanan">
+                <div class="splide slideservices">
+                    <div class="splide__track">
+                        <div class="splide__list">
+                            <div class="splide__slide">
+						    	<div class="ndeso__calllayanan">
+							    	<span class="call__left">PLN</span>
+									<span class="call__right">123</span>
+								</div>
+							</div>
+                            <div class="splide__slide">
+						    	<div class="ndeso__calllayanan">
+							    	<span class="call__left">Polisi</span>
+									<span class="call__right">110</span>
+								</div>
+							</div>
+                            <div class="splide__slide">
+						    	<div class="ndeso__calllayanan">
+							    	<span class="call__left">Pemadam Kebakaran</span>
+									<span class="call__right">113</span>
+								</div>
+							</div>
+                            <div class="splide__slide">
+						    	<div class="ndeso__calllayanan">
+							    	<span class="call__left">Basarnas</span>
+									<span class="call__right">115</span>
+								</div>
+							</div>
+                            <div class="splide__slide">
+						    	<div class="ndeso__calllayanan">
+							    	<span class="call__left">BMKG</span>
+									<span class="call__right">196</span>
+								</div>
+							</div>
+                            <div class="splide__slide">
+						    	<div class="ndeso__calllayanan">
+							    	<span class="call__left">Ambulans</span>
+									<span class="call__right">118/119</span>
+								</div>
+							</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+			<div class="header__top">
+                <div class="ndeso__container ndeso__clear">
+                    <div class="ndeso_logo">
+                        <a href="#" class="custom-logo-link" rel="home" aria-current="page"><img width="500" height="100" src="assets/img/icon/logo.png" class="custom-logo" alt="JDIH DPRD Pesawaran" decoding="async" fetchpriority="high"  sizes="(max-width: 500px) 100vw, 500px" /></a>
+                    </div>
+                    <span class="ndeso__currenttime">
+                        <span id="currentDay"></span>, <span class="time__span" id="currentDate"></span>
+                    </span>
+                    <div class="ndeso__mainmenu">
+                        <div class="float_menu">
+                            <div class="nav">
+                                <ul id="ndesomenus" class="ndmenu deskmenu p-0">
+                                    <li id="menu-item-723" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-159 current_page_item menu-item-723">
+                                        <a href="index.html" aria-current="page">Beranda</a>
+                                    </li>
+                                    <li id="menu-item-735" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-735">
+                                        <a href="kelengkapan_dewan.html">Perangkat</a>
+                                    </li>
+                                    <li id="menu-item-775" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-775">
+                                        <a href="produk_hukum.html">Produk Hukum</a>
+                                    </li>
+                                    <li id="menu-item-731" class="menu-item menu-item-type-post_type_archive menu-item-object-agenda menu-item-731">
+                                        <a href="agenda.html">Agenda</a>
+                                    </li>
+                                    <li id="menu-item-738" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-738">
+                                        <a href="#">Galeri</a>
+                                        <ul class="sub-menu">
+                                            <li id="menu-item-732" class="menu-item menu-item-type-post_type_archive menu-item-object-galeri menu-item-732">
+												<a href="#">Galeri Foto</a>
+											</li>
+                                            <li id="menu-item-733" class="menu-item menu-item-type-post_type_archive menu-item-object-video menu-item-733">
+												<a href="#">Galeri Video</a>
+											</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <i class="icon-search ndeso__opensearch" onclick="mysearch()"></i>
+                    <span class="mobile_menu" onclick="mymenu()"></span>
+                    <div class="ndeso__searchform">
+                        <div class="search__form">
+                            <form method="get" action="#">
+                                <fieldset>
+                                    <input name="keyword" type="text" placeholder="Cari sesuatu..."/>
+                                    <select name="post_type">
+                                        <option value="post">Berita</option>
+                                        <option value="pengumuman">Pengumuman</option>
+                                        <option value="agenda">Agenda</option>
+                                        <option value="opini">Opini Warga</option>
+                                        <option value="produk-desa">Produk Hukum</option>
+                                        <option value="bumdes">Produk BUMDes</option>
+                                        <option value="layanan">Layanan Publik</option>
+                                    </select>
+                                    <button id="searchsubmit" type="submit"><i class="icon-search"></i></button>
+                                </fieldset>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+		</section>
+
+        <!-- Content -->
+		<div class="ndeso_breadcrumb">
+	    	<div class="ndeso__container">
+            	<div class="breadcrumbs" itemscope>
+					<div class="inbread" itemprop="breadcrumb">
+						<span class="here"><span><a href="index.html" itemprop="url">Home</a></span> 
+						<i class="icon-right"></i> 
+						<span><a href="produk_hukum.html">Produk Hukum</a></span> 
+						<i class="icon-right"></i>  
+						<span>Komoditi Tanaman Tembakau Super</span>
+					</div>
+				</div>
+			</div>
+        </div>
+
+		<section class="ndeso_single_page">
+            <div class="ndeso__container">
+			    <div class="ndeso__clear single_outer">
+					<div class="single__sticky">
+					    <a href="https://facebook.com/share.php?u=https://jdih-dprd.pesawarankab.go.id/agenda/pertandingan-final-kompetisi-bola-basket-antar-kelas-2017/&amp;t=Pertandingan%20Final%20Kompetisi%20Sepak%20Bola%20Piala%20Bupati" target="_blank" title="Share"><i class="icon-facebook"></i></a>
+						<a href="https://twitter.com/intent/tweet?text=Pertandingan%20Final%20Kompetisi%20Sepak%20Bola%20Piala%20Bupati%20https://jdih-dprd.pesawarankab.go.id/agenda/pertandingan-final-kompetisi-bola-basket-antar-kelas-2017/" target="_blank" title="Share"><i class="icofont-x"></i></a>
+						<a href="https://wa.me/?text=Pertandingan%20Final%20Kompetisi%20Sepak%20Bola%20Piala%20Bupati%20https://jdih-dprd.pesawarankab.go.id/agenda/pertandingan-final-kompetisi-bola-basket-antar-kelas-2017/" target="_blank" title="Share"><i class="icon-whatsapp"></i></a>
+						<a href="https://t.me/share/url?url=https://jdih-dprd.pesawarankab.go.id/agenda/pertandingan-final-kompetisi-bola-basket-antar-kelas-2017/&amp;text=Pertandingan%20Final%20Kompetisi%20Sepak%20Bola%20Piala%20Bupati" target="_blank" title="Share"><i class="icon-telegram"></i></a>
+					</div>
+					<div class="single_primary">
+				    	<div class="blog_content">
+							<h1>Komoditi Tanaman Tembakau Super</h1>
+							<table class="layanan_table">
+					    		<tr>
+					    			<td><strong>Jenis Peraturan</strong></td>
+					    			<td><strong>Ciuss Creative</strong></td>
+								</tr>
+					    		<tr>
+					    			<td>Nomor</td>
+					    			<td>Jalan Kerikil Tajam no 123</td>
+								</tr>
+					    		<tr>
+					    			<td>Tentang</td>
+					    			<td><strong>089768757857</strong></td>
+								</tr>
+							</table>
+							<div class="blog_image"></div>
+							<div class="single_content">
+								<p>rerum libero similique tenetur et ut ea. Voluptas sunt nihil ad dolore. Et impedit possimus totam repellendus nobis rerum sequi enim. Non aliquam quaerat officiis facilis. Repellendus ea error officiis consequatur. Officia id omnis ab eaque. Corrupti enim velit enim eos qui est omnis excepturi. Inventore neque et tenetur et voluptatibus occaecati aut deleniti. Quod quam hic enim dolores. Ullam aperiam est porro non corporis voluptates eos</p>
+							</div>
+						</div>
+					</div>
+				    <div class="ndesopro_secondary">
+						<div class="bar__inner">
+							<div id="block-2">
+								<div class="widget_block widget_search">
+									<form role="search" method="get" action="#" class="wp-block-search__button-outside wp-block-search__text-button wp-block-search">
+										<label class="wp-block-search__label" for="wp-block-search__input-1" >Cari</label>
+										<div class="wp-block-search__inside-wrapper " >
+											<input class="wp-block-search__input" id="wp-block-search__input-1" placeholder="" value="" type="search" name="s" required />
+											<button aria-label="Cari" class="wp-block-search__button wp-element-button" type="submit" >Cari</button>
+										</div>
+									</form>
+								</div>
+							</div>
+							<div id="block-3">
+								<div class="widget_block">
+									<div class="wp-block-group">
+										<div class="wp-block-group__inner-container is-layout-flow wp-block-group-is-layout-flow">
+											<h2 class="wp-block-heading fw-bold">Recent Posts</h2>
+											<ul class="wp-block-latest-posts__list wp-block-latest-posts">
+												<li>
+													<a class="wp-block-latest-posts__post-title" href="#">Pimpinan dan Anggota Badan Kehormatan DPRD Kabupaten Pesawaran</a>
+												</li>
+												<li>
+													<a class="wp-block-latest-posts__post-title" href="#">Pimpinan dan Anggota Badan Musyawarah Dewan Perwakilan Rakyat Daerah Kabupaten Pesawaran</a>
+												</li>
+												<li>
+													<a class="wp-block-latest-posts__post-title" href="#">Pimpinan dan Anggota Komisi-komisi Dewan Perwakilan Rakyat Daerah Kabupaten Pesawaran</a>
+												</li>
+												<li>
+													<a class="wp-block-latest-posts__post-title" href="#">Pimpinan dan Anggota Badan Anggaran Dewan Perwakilan Rakyat Daerah Kabupaten Pesawaran</a>
+												</li>
+												<li>
+													<a class="wp-block-latest-posts__post-title" href="#">Pimpinan dan Anggota Badan Pembentukan Perda DPRD Kabupaten Pesawaran</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div id="block-4">
+								<div class="widget_block">
+									<div class="wp-block-group">
+										<div class="wp-block-group__inner-container is-layout-flow wp-block-group-is-layout-flow"></div>
+									</div>
+								</div>
+							</div>
+							<div id="block-5">
+								<div class="widget_block">
+									<div class="wp-block-group">
+										<div class="wp-block-group__inner-container is-layout-flow wp-block-group-is-layout-flow"></div>
+									</div>
+								</div>
+							</div>
+							<div id="block-6">
+								<div class="widget_block">
+									<div class="wp-block-group">
+										<div class="wp-block-group__inner-container is-layout-flow wp-block-group-is-layout-flow"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<i class="icon__bar icon-plus" onclick="mysidebar()"></i>
+					</div>					
+				</div>
+			</div>
+		</section>
+
+		<!-- Footer -->
+		<div class="footer">
+			<div class="ndeso__container">
+				<div class="copyright ndeso__clear">
+					<div class="copyr">Copyright © Sekretariat DPRD Pesawaran</div>
+					<div class="copyl">Jaringan Dokumentasi dan Informasi Hukum</div>
+				</div>
+			</div>
+		</div>
+		<!-- Footer Bar Mobile View -->
+		<div class="footer__icon">
+			<div class="icon__block">
+				<a href="index.html">
+					<svg fill="#000000" width="80px" height="80px" viewBox="-0.2 -0.2 2.4 2.4" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMinYMin" class="jam jam-home"><path d="M1.8 1.8V0.713l-0.8 -0.48 -0.8 0.48V1.8h0.4v-0.275a0.4 0.4 0 1 1 0.8 0V1.8h0.4zm-0.6 0.2v-0.475a0.2 0.2 0 1 0 -0.4 0V2H0.2a0.2 0.2 0 0 1 -0.2 -0.2V0.713a0.2 0.2 0 0 1 0.097 -0.172l0.8 -0.48a0.2 0.2 0 0 1 0.206 0l0.8 0.48A0.2 0.2 0 0 1 2 0.713V1.8a0.2 0.2 0 0 1 -0.2 0.2h-0.6z"/></svg>
+				</a>
+				<span>Beranda</span>
+			</div>
+			<div class="icon__block">
+				<a href="agenda.html">
+					<svg width="80px" height="80px" viewBox="0 0 2.4 2.4" xmlns="http://www.w3.org/2000/svg"><path d="M1.9 0.4h-0.2V0.3a0.1 0.1 0 0 0 -0.2 0v0.1H0.9V0.3a0.1 0.1 0 0 0 -0.2 0v0.1H0.5a0.3 0.3 0 0 0 -0.3 0.3v1.2a0.3 0.3 0 0 0 0.3 0.3h1.4a0.3 0.3 0 0 0 0.3 -0.3V0.7a0.3 0.3 0 0 0 -0.3 -0.3Zm0.1 1.5a0.1 0.1 0 0 1 -0.1 0.1H0.5a0.1 0.1 0 0 1 -0.1 -0.1v-0.7h1.6Zm0 -0.9H0.4V0.7a0.1 0.1 0 0 1 0.1 -0.1h0.2v0.1a0.1 0.1 0 0 0 0.2 0V0.6h0.6v0.1a0.1 0.1 0 0 0 0.2 0V0.6h0.2a0.1 0.1 0 0 1 0.1 0.1Z"/></svg>
+				</a>
+				<span>Agenda</span>
+			</div>
+			<div class="icon__block" onclick="mysearch()">
+				<a href="#">
+					<svg fill="#000000" width="80px" height="80px" viewBox="0 0 2.4 2.4" xmlns="http://www.w3.org/2000/svg"><path d="M2.171 2.029 1.8 1.661A0.9 0.9 0 1 0 1.661 1.8l0.368 0.368a0.1 0.1 0 0 0 0.142 0 0.1 0.1 0 0 0 0 -0.139ZM1.1 1.8a0.7 0.7 0 1 1 0.7 -0.7 0.7 0.7 0 0 1 -0.7 0.7Z"/></svg>
+				</a>
+				<span>Cari</span>
+			</div>
+			<div class="icon__block">
+				<a href="kelengkapan_dewan.html">
+					<svg width="80px" height="80px" viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M11.667 26.667a18.333 18.333 0 1 1 28.653 15.157 30.017 30.017 0 0 1 19.667 27.267 2.5 2.5 0 0 1 -5 0.15 25 25 0 0 0 -49.977 0 2.5 2.5 0 0 1 -4.997 -0.147 30.017 30.017 0 0 1 19.667 -27.27A18.313 18.313 0 0 1 11.667 26.667zM30 13.333a13.333 13.333 0 1 0 0 26.667 13.333 13.333 0 0 0 0 -26.667z"/><path d="M57.633 26.667c-0.493 0 -0.973 0.033 -1.447 0.1a2.5 2.5 0 1 1 -0.707 -4.947 15.1 15.1 0 0 1 11.267 26.99 22.3 22.3 0 0 1 13.187 20.357 2.5 2.5 0 0 1 -5 0 17.31 17.31 0 0 0 -12.32 -16.573l-1.78 -0.533v-5.587l1.367 -0.697A10.1 10.1 0 0 0 57.633 26.667z"/></svg>
+				</a>
+				<span>Perangkat</span>
+			</div>
+			<div class="icon__block">
+				<a href="produk_hukum.html" class="active">
+					<svg fill="#000000" width="80px" height="80px" viewBox="0 0 2.4 2.4" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M0.556 0.406c0.016 -0.004 0.033 -0.006 0.051 -0.006L2.004 0.5c0.125 0.002 0.248 0.106 0.187 0.241 -0.012 0.026 -0.065 0.133 -0.15 0.301l-0.105 0.209 -0.034 0.068 -0.011 0.021a0.263 0.263 0 0 1 -0.165 0.155l-0.015 0.005H0.702l-0.197 0C0.448 1.503 0.403 1.548 0.4 1.6l0 0.094c0.004 0.057 0.049 0.103 0.1 0.106h0.017a0.3 0.3 0 0 1 0.566 0h0.234a0.3 0.3 0 1 1 0 0.2h-0.234a0.3 0.3 0 0 1 -0.566 0h-0.023C0.336 1.991 0.21 1.864 0.2 1.7l0 -0.105c0.008 -0.159 0.135 -0.286 0.299 -0.295l-0.098 -0.686L0.4 0.6c0 -0.065 -0.033 -0.142 -0.071 -0.179C0.32 0.411 0.276 0.4 0.2 0.4V0.2c0.124 0 0.214 0.022 0.271 0.079 0.034 0.034 0.063 0.078 0.085 0.127ZM0.711 1.3h0.966a0.063 0.063 0 0 0 0.029 -0.034l0.005 -0.011 0.013 -0.026 0.034 -0.068c0.035 -0.07 0.071 -0.14 0.104 -0.206l0.002 -0.003c0.058 -0.115 0.102 -0.204 0.126 -0.253L0.601 0.6l0.098 0.686a0.017 0.017 0 0 0 0.012 0.014ZM1.6 2a0.1 0.1 0 1 0 0 -0.2 0.1 0.1 0 0 0 0 0.2Zm-0.8 0a0.1 0.1 0 1 0 0 -0.2 0.1 0.1 0 0 0 0 0.2Z"/></svg>
+				</a>
+				<span>Produk</span>
+			</div>
+		</div>
+	</div>
+    
+    <!-- Additional Script -->
+	<script type="text/javascript" src="assets/themes/js/splide.mind.js"></script>
+	<script type="text/javascript" src="assets/js/script.js"></script>
+	<script type="text/javascript" src="assets/js/script-slide.js"></script>
+    
+    <!-- Bootstrap core JavaScript -->
+	<script type="text/javascript" src="assets/bootstrap/bootstrap.bundle.min.js"></script>
+</body>
+</html>
