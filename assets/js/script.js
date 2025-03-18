@@ -55,3 +55,10 @@ function toggleClassBasedOnWidth() {
 }
 window.addEventListener('load', toggleClassBasedOnWidth);
 window.addEventListener('resize', toggleClassBasedOnWidth);
+
+document.querySelectorAll(".text-truncate").forEach(el => {
+    let maxLength = 25;
+    if (el.innerText.length > maxLength) {
+        el.innerText = el.innerText.substring(0, maxLength) + "...";
+    }
+});
