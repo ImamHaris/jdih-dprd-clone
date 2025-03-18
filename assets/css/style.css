@@ -879,14 +879,35 @@ a {
 
 
 /* Berita */
+.news-title-detail {
+  font-size: 1.5rem;
+  font-weight: bold;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  text-align: center;
+  min-height: 3rem;
+}
+.card-text {
+  max-width: 100%;
+  width: 100%;
+  padding: 0px 20px 0px 0px; /* Padding kanan ditambah */
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  text-align: justify;
+  box-sizing: border-box;
+}
 .news-card {
-  height: 100%;
-  width: 95%;
+  width: 95%; /* Reduce width to prevent stretching */
+  height: 100%; /* Maintain height consistency */
   display: flex;
   flex-direction: column;
   position: relative;
   overflow: hidden;
+  margin: 0 auto; /* Center the card */
 }
+
 .news-card img {
   height: 250px;
   object-fit: cover;
@@ -952,4 +973,109 @@ a {
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   text-align: justify;
+}
+/* text in detail post terkait */
+.news-meta-detail {
+  gap: 12px;
+  font-size: 0.6rem;
+}
+
+@media (min-width: 1025px) and (max-width: 1400px) {
+  .ndeso__currenttime {
+      display: none;
+  }
+}
+@media (min-width: 1025px) and (max-width: 1100px) {
+  .menu-item {
+      font-size: 14px;
+  }
+  .nav .deskmenu li a {
+    padding: 0px 10px 0px 10px;
+  }
+}
+@media (min-width: 1101px) and (max-width: 1150px) {
+  .menu-item {
+      font-size: 16px;
+  }
+  .nav .deskmenu li a {
+    padding: 0px 12px 0px 12px;
+  }
+}
+@media (min-width: 1151px) and (max-width: 1200px) {
+  .menu-item {
+      font-size: 16px;
+  }
+  .nav .deskmenu li a {
+    padding: 0px 15px 0px 15px;
+  }
+}
+@media (min-width: 1201px) and (max-width: 1250px) {
+  .menu-item {
+      font-size: 16px;
+  }
+  .nav .deskmenu li a {
+    padding: 0px 18px 0px 18px;
+  }
+}
+
+/* Modal style */
+.share-modal {
+  position: absolute;
+  bottom: 40px; /* Letakkan modal di atas tombol */
+  width: 150px;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  z-index: 1000; /* Agar modal berada di depan elemen lain */
+}
+
+/* Panah kecil di atas modal */
+.share-modal::after {
+  content: "";
+  position: absolute;
+  top: 100%; /* Geser panah ke bawah modal */
+  left: calc(50% - 10px); /* Panah berada di tengah modal */
+  border-width: 10px;
+  border-style: solid;
+  border-color: #ffffff transparent transparent transparent;
+}
+.copy-popup {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.75);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 12px;
+  display: none;
+  white-space: nowrap;
+}
+
+.form-group {
+  padding-right: 1.5rem;
+}
+
+
+/* Hastag */
+.hastag-badge {
+  background-color: #e9eaeb;
+  color: #9c9b9b;
+}
+.hastag-badge:hover {
+  background-color: #006064;
+  color: #fff;
+}
+
+.hastag-badge-soft {
+  color: #9c9b9b;
+}
+.hastag-badge-soft:hover {
+  color: #006064;
+}
+
+.categories {
+  margin: 0 0 3px;
+  padding: 0 0 3px;
 }

@@ -2611,8 +2611,8 @@ p#cancel-comment-reply {
   color: #888;
 }
 
-/* @media screen and (max-width: 1024px) { */
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1024px) {
+/* @media screen and (max-width: 1400px) { */
   .wrapper {
     margin-top: 0 !important;
   }

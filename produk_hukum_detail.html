@@ -16,12 +16,13 @@
     <link rel="stylesheet" href="assets/themes/css/icofont.css" type="text/css"/>
     <link rel="stylesheet" href="assets/themes/css/ndeso-font.css" type="text/css"/>
 	<!-- Jquery Ver 3.7.1 -->
-	<script type="text/javascript" src="assets/themes/js/jquery/jquery.min.js"></script>
-	<script type="text/javascript" src="assets/themes/js/jquery/jquery-migrate.min.js"></script>
+	<script type="text/javascript" src="assets/themes/js/jquery/jquery.min.js"></script> 
     <!-- Bootstrap 5 CSS -->
     <link rel="stylesheet" href="assets/bootstrap/bootstrap.min.css" type="text/css"/>
 	<!-- CSS Style -->
     <link rel="stylesheet" href="assets/css/style.css" type="text/css"/>
+	<!-- Font Awesome CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 
 <body class="home page-template page-template-page-home page-template-page-home-php page page-id-159 wp-custom-logo wp-embed-responsive">
@@ -175,9 +176,9 @@
 					    			<td>Nomor</td>
 					    			<td>Jalan Kerikil Tajam no 123</td>
 								</tr>
-					    		<tr>
-					    			<td>Tentang</td>
-					    			<td><strong>089768757857</strong></td>
+								<tr>
+									<td>Tentang</td>
+									<td><strong>089768757857</strong></td>
 								</tr>
 							</table>
 							<div class="blog_image"></div>
@@ -186,15 +187,15 @@
 							</div>
 						</div>
 					</div>
-				    <div class="ndesopro_secondary">
+					<div class="ndesopro_secondary">
 						<div class="bar__inner">
+							<!-- Pencarian -->
 							<div id="block-2">
 								<div class="widget_block widget_search">
-									<form role="search" method="get" action="#" class="wp-block-search__button-outside wp-block-search__text-button wp-block-search">
-										<label class="wp-block-search__label" for="wp-block-search__input-1" >Cari</label>
-										<div class="wp-block-search__inside-wrapper " >
-											<input class="wp-block-search__input" id="wp-block-search__input-1" placeholder="" value="" type="search" name="s" required />
-											<button aria-label="Cari" class="wp-block-search__button wp-element-button" type="submit" >Cari</button>
+									<form action="https://poltekkeskesba.ac.id/search" method="GET">
+										<div class="input-group">
+											<input type="search" name="query" value="" class="form-control" placeholder="Cari" aria-label="Cari">
+											<button class="btn btn-primary" type="submit"><i class="fas fa-search"></i></button>
 										</div>
 									</form>
 								</div>
@@ -203,23 +204,11 @@
 								<div class="widget_block">
 									<div class="wp-block-group">
 										<div class="wp-block-group__inner-container is-layout-flow wp-block-group-is-layout-flow">
-											<h2 class="wp-block-heading fw-bold">Recent Posts</h2>
-											<ul class="wp-block-latest-posts__list wp-block-latest-posts">
-												<li>
-													<a class="wp-block-latest-posts__post-title" href="#">Pimpinan dan Anggota Badan Kehormatan DPRD Kabupaten Pesawaran</a>
-												</li>
-												<li>
-													<a class="wp-block-latest-posts__post-title" href="#">Pimpinan dan Anggota Badan Musyawarah Dewan Perwakilan Rakyat Daerah Kabupaten Pesawaran</a>
-												</li>
-												<li>
-													<a class="wp-block-latest-posts__post-title" href="#">Pimpinan dan Anggota Komisi-komisi Dewan Perwakilan Rakyat Daerah Kabupaten Pesawaran</a>
-												</li>
-												<li>
-													<a class="wp-block-latest-posts__post-title" href="#">Pimpinan dan Anggota Badan Anggaran Dewan Perwakilan Rakyat Daerah Kabupaten Pesawaran</a>
-												</li>
-												<li>
-													<a class="wp-block-latest-posts__post-title" href="#">Pimpinan dan Anggota Badan Pembentukan Perda DPRD Kabupaten Pesawaran</a>
-												</li>
+											<h2 class="wp-block-heading fw-bold">Categories</h2>
+											<ul class="categories">
+												<li><a href="#" class="text-decoration-none news-caregories-txt">Berita Terbaru</a></li>
+												<li><a href="#" class="text-decoration-none news-caregories-txt">Informasi & Pengumuman</a></li>
+												<li><a href="#" class="text-decoration-none news-caregories-txt">Kegiatan</a></li>
 											</ul>
 										</div>
 									</div>
@@ -228,7 +217,65 @@
 							<div id="block-4">
 								<div class="widget_block">
 									<div class="wp-block-group">
-										<div class="wp-block-group__inner-container is-layout-flow wp-block-group-is-layout-flow"></div>
+										<div class="wp-block-group__inner-container is-layout-flow wp-block-group-is-layout-flow">
+											<h2 class="wp-block-heading fw-bold">Popular Tags</h2>
+											<div class="d-flex flex-wrap gap-2">
+												<a href="#" class="badge hastag-badge text-decoration-none p-2 fs-6">
+													tembakau
+												</a>
+												<a href="#" class="badge hastag-badge text-decoration-none p-2 fs-6">
+													pertanian
+												</a>
+												<a href="#" class="badge hastag-badge text-decoration-none p-2 fs-6">
+													komoditi
+												</a>
+												<a href="#" class="badge hastag-badge text-decoration-none p-2 fs-6">
+													ekspor
+												</a>
+												<a href="#" class="badge hastag-badge text-decoration-none p-2 fs-6">
+													industrirokok
+												</a>
+												<a href="#" class="badge hastag-badge text-decoration-none p-2 fs-6">
+													petani
+												</a>
+												<a href="#" class="badge hastag-badge text-decoration-none p-2 fs-6">
+													tembakau
+												</a>
+												<a href="#" class="badge hastag-badge text-decoration-none p-2 fs-6">
+													pertanian
+												</a>
+												<a href="#" class="badge hastag-badge text-decoration-none p-2 fs-6">
+													komoditi
+												</a>
+												<a href="#" class="badge hastag-badge text-decoration-none p-2 fs-6">
+													ekspor
+												</a>
+												<a href="#" class="badge hastag-badge text-decoration-none p-2 fs-6">
+													industrirokok
+												</a>
+												<a href="#" class="badge hastag-badge text-decoration-none p-2 fs-6">
+													petani
+												</a>
+												<a href="#" class="badge hastag-badge text-decoration-none p-2 fs-6">
+													tembakau
+												</a>
+												<a href="#" class="badge hastag-badge text-decoration-none p-2 fs-6">
+													pertanian
+												</a>
+												<a href="#" class="badge hastag-badge text-decoration-none p-2 fs-6">
+													komoditi
+												</a>
+												<a href="#" class="badge hastag-badge text-decoration-none p-2 fs-6">
+													ekspor
+												</a>
+												<a href="#" class="badge hastag-badge text-decoration-none p-2 fs-6">
+													industrirokok
+												</a>
+												<a href="#" class="badge hastag-badge text-decoration-none p-2 fs-6">
+													petani
+												</a>
+											</div>
+										</div>
 									</div>
 								</div>
 							</div>
@@ -248,7 +295,7 @@
 							</div>
 						</div>
 						<i class="icon__bar icon-plus" onclick="mysidebar()"></i>
-					</div>					
+					</div>				
 				</div>
 			</div>
 		</section>
